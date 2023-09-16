@@ -32,7 +32,7 @@ async function populateProductCards() {
     card.addEventListener("click", () => {
       localStorage.setItem("productId", product.id);
     })
-    card.href = "./product.html";
+    card.href = "./html/product.html";
     card.innerHTML = `
       <section class="product-card">
         <div class='image-wrapper'>
