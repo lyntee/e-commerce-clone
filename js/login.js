@@ -16,7 +16,7 @@ const loginToHomepage = (e) => {
     if(wrongPwCount < 3) {
       if(user.password === password) {
         localStorage.setItem("loggedUser", JSON.stringify(user));
-        window.location.href = "../html/index.html";
+        window.location.href = "../index.html";
       } else {
         wrongPwCount++;
         alert("wrong password");
