@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reset Password</title>
+  <link rel="stylesheet" href="../css/login-signup-reset.css">
+  <script type="module" src="../js/resetpw.js" defer></script>
+</head>
+<body>
+  <h1>Reset Password</h1>
+  <form id="reset-pw-form">
+    <div class="form-inputs">
+      <label for="current-username">Username</label>
+      <input id="current-username" type="text" placeholder="Enter your username" autocomplete="username">
+    </div>
+    <div class="form-inputs">
+      <label for="reset-pw">New Password</label>
+      <input id="reset-pw" type="password" placeholder="Enter new password" autocomplete="new-password">
+    </div>
+    <input type="submit" value="Reset Password">
+    <a href="./login.html" id="back-to-login">Back to login page</a>
+  </form>
+</body>
+</html>

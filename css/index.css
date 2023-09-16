@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+main {
+  margin: 0 auto;
+  width: 70vw;
+}
+
+nav a:link, 
+nav a:visited,
+footer a:link, 
+footer a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+nav h1 a:link,
+nav h1 a:visited {
+  color:#ECEDF7;
+  padding: 16px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #141C2C;
+}
+
+nav a {
+  display: flex;
+}
+
+.fa-user-circle {
+  color:#ECEDF7;
+}
+
+/* drop down button */
+.drop-btn {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.drop-btn p,
+.drop-btn span {
+  color:#ECEDF7;
+}
+
+/* Dropdown button on hover & focus */
+.drop-btn:hover, .drop-btn:focus {
+  background-color: #ECEDF7;
+}
+
+.drop-btn:hover.drop-btn p,
+.drop-btn:hover.drop-btn span {
+  color: black;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a,
+#logout {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover,
+#logout:hover {
+  cursor: pointer;
+  background-color: #141C2C;
+  color: #ECEDF7;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.search-bar input[type="search"] {
+  width: 50%;
+  padding: 10px;
+}
+
+.buttons {
+  background-color: #141C2C;
+  color:#ECEDF7;
+  border: none;
+  padding: 10px;
+}
+
+.buttons:hover {
+  cursor: pointer;
+}
+
+.categories-conatiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px 0 20px 0;
+}
+
+.category-item {
+  background-color: #141C2C;
+  color: #ECEDF7;
+  padding: 16px;
+}
+
+.category-item:hover {
+  cursor: pointer;
+  background-color: #8C94B8;
+  color:#141C2C;
+}
+
+.selected-category {
+  background-color: #8C94B8;
+  color:#141C2C;
+}
+
+/* product card css */
+.products-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 2rem 0 2rem 0;
+}
+
+.products-container a:link, 
+.products-container a:visited {
+  text-decoration: none;
+  color: black;
+}
+.product-card:hover {
+  box-shadow: 5px 5px 10px grey;
+  transform: scale(1.05);
+  transition: all 0.3s ease-in;
+}
+.product-card {
+/* border: 1px solid black; */
+  width: 270px;
+  /* width: calc(60/3) + "vw"; */
+}
+
+.image-wrapper {
+  width: 100%;
+}
+
+.image-wrapper img {
+  width: 270px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.description-wrapper {
+  padding: 10px;
+}
+
+/* hide the meter tag */
+.average-rating {
+  position: relative;
+  appearance: none;
+  color: transparent;
+  width: auto;
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+.average-rating::before {
+  /* rating divide by max rating × 100%. */
+  --percent: calc(4.69/5*100%);
+  content: '★★★★★';
+  font-size: 2rem;
+  background:
+    linear-gradient(90deg, gold var(--percent), rgba(0,0,0,0.2) var(--percent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+footer {
+  background-color: #141C2C;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color:#ECEDF7;
+  padding: 20px 0 20px 0;
+}
+
+footer .about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer .links {
+  display: flex;
+}
+
+footer .links a {
+  margin: 0 10px 0 10px;
+  color:#ECEDF7;
+}
+
+footer .links a:hover {
+  color: #8C94B8;
+}
+
+@media (min-width: 820px) {
+  footer .about {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1200px) {
+  .products-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    grid-auto-flow: row;
+    gap: 1rem;
+  }
+}

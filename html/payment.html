@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment</title>
+  <!-- insert font awesome script tag -->
+  <script src="https://kit.fontawesome.com/f0668889bf.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/payment-trans-hist.css">
+  <script type="module" src="../js/payment.js" defer></script>
+</head>
+<body>
+   <nav>
+    <h1><a href="./index.html"><em>Shop</em></a></h1>
+    <div class="dropdown">
+      <a href="" class="drop-btn"><span class="fas fa-user-circle fa-2x"></span><p id="loggedUser">User</p></a>
+      <div class="dropdown-content">
+        <a href="./shopping-cart.html">Shopping Cart</a>
+        <a href="./transt-hist.html">Transaction History</a>
+        <p id="logout">Log out</p>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <h1>Payment Successfully Completed <span class="fa-solid fa-circle-check"></span></h1>
+    <a id="link-to-trans-hist" class="payment-links" href="./transt-hist.html">Show Transaction History</a>
+    <a id="link-to-home-page" class="payment-links" href="./index.html">Return to Home page</a>
+  </main>
+
+  <footer>
+    <h4><em>Shop</em></h4>
+    <div class="about">
+      <p>Terms of purchase</p>
+      <p>Return policy</p>
+      <p>Newsletter</p>
+      <p>FAQ</p>
+    </div>
+    <div class="links">
+      <a href=""><span class="fab fa-facebook fa-2x"></span></a>
+      <a href=""><span class="fab fa-twitter fa-2x"></span></a>
+      <a href=""><span class="fab fa-instagram fa-2x"></span></a>
+    </div>
+    <p>Copyright &copy <span class="year">2021</span> All rights reserved.</p>
+  </footer>
+</body>
+</html>

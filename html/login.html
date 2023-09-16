@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="../css/login-signup-reset.css">
+  <script type="module" src="../js/login.js" defer></script>
+</head>
+<body>
+  <h1>Welcome Back!</h1>
+  <form id="login-form">
+    <div class="form-inputs">
+      <label for="username">Username</label>
+      <input id="username" type="text" placeholder="Enter your username" autocomplete="username">
+    </div>
+    <div class="form-inputs">
+      <label for="password">Password</label>
+      <input id="password" type="password" placeholder="Enter your password" autocomplete="current-password">
+    </div>
+    <a href="./resetpw.html" id="forgot-pw">Forgot password?</a>
+    <input type="submit" value="Login">
+    <p>Don't have an account? <a href="./signup.html">Sign up</a></p>
+  </form>
+  <a href="./index.html">Continue without sign in </a>
+</body>
+</html>
