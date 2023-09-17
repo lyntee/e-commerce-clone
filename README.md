@@ -1,3 +1,3 @@
 # e-commerce-clone
-Live website: 
-[Video link](https://www.youtube.com/watch?v=I8M9ZfjrzRo)
+[Live website (GitHub pages]()
+[Video Demo link](https://www.youtube.com/watch?v=I8M9ZfjrzRo)
