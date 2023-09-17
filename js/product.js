@@ -1,4 +1,4 @@
-import { getSingleProduct, logUserOut, getThisYear } from "./utilities.js";
+import { getSingleProduct, logUserOut, getThisYear, userRecords } from "./utilities.js";
 
 const mainContainer = document.querySelector("main");
 const loggedUsername = document.querySelector("#loggedUser");
@@ -59,6 +59,7 @@ async function addProductToCart() {
     }
     
     const currentUser = JSON.parse(localStorage.getItem("userRecords")).find( (user) => user.username === JSON.parse(localStorage.getItem("loggedUser")).username
+    ) || userRecords.find( (user) => user.username === JSON.parse(localStorage.getItem("loggedUser")).username
     );
     const shoppingCart = currentUser.cartItems || [];
     shoppingCart.push(item);
